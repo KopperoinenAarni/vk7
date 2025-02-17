@@ -22,7 +22,7 @@ public class App
 
                 switch (i) {
                     case 1:
-                        System.out.println("Minkä kirjan haluat lisätä? 1) Fiktiokirja, 2) Tietokirja");
+                        System.out.println("Minkä kirjan haluat lisätä kirjastoon? 1) Fiktiokirja, 2) Tietokirja");
                         String bookType = sc.nextLine();
                         System.out.println("Anna kirjan nimi: ");
                         String setTitle = sc.nextLine();
@@ -36,11 +36,11 @@ public class App
                         if (bookType.equals("1")) {
                             FictionBook fictionBook = new FictionBook(setTitle, setAuthor, pages, copies);
                             library.addBook(fictionBook);
-                            System.out.println("Kirja lisätty!");
+                            System.out.println("Kirja lisätty kirjastoon!");
                         } else if (bookType.equals("2")) {
                             NonFictionBook nonFictionBook = new NonFictionBook(setTitle, setAuthor, pages, copies);
                             library.addBook(nonFictionBook);
-                            System.out.println("Kirja lisätty!");
+                            System.out.println("Kirja lisätty kirjastoon!");
                         } else {
                             System.out.println("Virheellinen kirjavalinta.");
                             break;
@@ -74,7 +74,7 @@ public class App
                             }
                         }
                         if (!found) {
-                            System.out.println("Kirjaa ei löytynyt tai se ei ole lainattavissa");
+                            System.out.println("Kirjaa ei ole lainattavissa");
                         }
                         break;
 
