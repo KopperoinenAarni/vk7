@@ -54,11 +54,6 @@ public class App
                         }
                         else {
                             library.listBooks();
-                            int sumCopies = 0;
-                            for (Book book : library.getBooks()) {
-                                sumCopies += book.getCopies();
-                            } // Tehdään summamuuttuja, joka laskee kirjojen määrän kirjastossa. Tämä auttaa pitämään koodin ohjeiden mukaisena.
-                            System.out.println("Kirjojen määrä kirjastossa on: " + sumCopies);
                         }
                         break;
 
