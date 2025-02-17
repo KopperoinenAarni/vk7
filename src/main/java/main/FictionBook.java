@@ -44,7 +44,7 @@ public class FictionBook extends Book implements Borrowable {
     
     @Override
     public void displayInfo() {
-        System.out.println("Nimi: " + getTitle() + ", Kirjailja: " + getAuthor() + ", Sivut: " + getPages() + ", Määrä: " + getCopies());
+        System.out.println("Nimi: " + getTitle() + ", Kirjailija: " + getAuthor() + ", Sivut: " + getPages() + ", Määrä: " + getCopies());
     }
     
     @Override
