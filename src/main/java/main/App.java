@@ -69,7 +69,7 @@ public class App
                             }
                         }
                         if (!found) {
-                            System.out.println("Kirjaa ei ole lainattavissa");
+                            System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
                         }
                         break;
 
