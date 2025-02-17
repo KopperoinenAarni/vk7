@@ -65,7 +65,7 @@ public class FictionBook extends Book implements Borrowable {
             System.out.println("Kirja " + this.getTitle() + " on palautettu");
         }
         else {
-            System.out.println("Kirja " + this.getTitle() + " ei ole lainassa");
+            System.out.println("Kirja " + this.getTitle() + " ei ole lainassa.");
         }
     }
 }
