@@ -14,6 +14,12 @@ public class Library {
             book.displayInfo();
             System.out.println("Kirjan kategoria: " + book.categorize());
         }
+        
+        int sumCopies = 0;
+        for (Book sumbook : books) {
+            sumCopies += sumbook.getCopies();
+        }
+        System.out.println("Kirjojen määrä kirjastossa on: " + sumCopies);
     }   
 
     public void addBook(Book book) {
