@@ -36,6 +36,10 @@ public class NonFictionBook extends Book {
 
     @Override
     public void displayInfo() {
+<<<<<<< HEAD
         System.out.println("Nimi: " + getTitle() + ", Kirjailja: " + getAuthor() + ", Sivut: " + getPages() + ", Määrä: " + getCopies());
+=======
+        System.out.println("Nimi: " + getTitle() + ", Kirjailija: " + getAuthor() + ", Sivut: " + getPages() + ", Määrä: " + getCopies());
+>>>>>>> refs/remotes/origin/main
     }
 }
